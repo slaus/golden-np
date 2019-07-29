@@ -1,0 +1,60 @@
+.header {
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 99;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo{
+
+    @include mq(s) {
+      width: 100%;
+      text-align: center;
+    }
+
+    p {
+      font-family: $ws;
+      font-size: 1.3rem;
+      color: $header-logo;
+
+      @include mq(xs) {
+        margin: 0 auto;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__menu {
+    width: 52%;
+
+    @include mq(md) {
+      width: 62%;
+    }
+
+    @include mq(s) {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $mr;
+      font-size: 0.7rem;
+      color: $header-text;
+    }
+    a:nth-child(-n+4) {
+      padding-right: 1.75rem;
+    }
+
+    a:hover {
+      color: $header-logo
+    }
+  }
+}

@@ -1,0 +1,53 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 47rem;
+  margin: 0 auto;
+
+  @include mq(md) {
+    width: 96%;
+  }
+}
+
+i {
+  padding-right: 0;
+  color: $main-title;
+  width: 2rem;
+  border: 3px solid $main-title;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+.fa.fa-twitter:hover {
+  color: $header-text;
+  border: 3px solid $twitter;
+  background: $twitter;
+}
+
+.fa.fa-facebook:hover {
+  color: $header-text;
+  border: 3px solid $facebook;
+  background: $facebook;
+}
+
+.fa.fa-pinterest-p:hover {
+  color: $header-text;
+  border: 3px solid $pinterest;
+  background: $pinterest;
+}
+
+.fa.fa-google-plus:hover {
+  color: $header-text;
+  border: 3px solid $google;
+  background: $google;
+}
