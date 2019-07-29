@@ -1,0 +1,178 @@
+include ./mixins
+.main
+    #banner
+        .banner-img
+            img(src="assets/img/background.jpg")
+            .banner-filter
+        .container
+            .banner-text
+                p Welcome To Our Studio!
+                p it's nice to meet you
+                a(href="") tell me more
+    #services
+        .container
+            +block-title(
+            'services',
+            'Proin iaculis purus consequat sem cure.')
+            .services__block
+                +service-block(
+                    'fa fa-shopping-basket fa-2x',
+                    'E-Commerce',
+                    'Proin iaculis purus consequat sem cure digni ssim.' +
+                    ' Donec porttitora entum suscript aenean rhoncus ' +
+                    'posuere odio in tincidunt')
+                +service-block(
+                    'fa fa-desktop fa-2x',
+                    'Responsive Web',
+                    'Proin iaculis purus consequat sem cure digni ssim.' +
+                    ' Donec porttitora entum suscript aenean rhoncus ' +
+                    'posuere odio in tincidunt')
+                +service-block(
+                    'fa fa-lock fa-2x',
+                    'Web Security',
+                    'Proin iaculis purus consequat sem cure digni ssim.' +
+                    ' Donec porttitora entum suscript aenean rhoncus ' +
+                    'posuere odio in tincidunt')
+    #portfolio
+        .container
+            +block-title(
+            'our portfolio',
+            'Proin iaculis purus consequat sem cure.')
+            .portfolio__block
+                .first-block
+                    +portfolio-block(
+                    'assets/img/ebony.jpg',
+                    'Ebony&Ivory',
+                    'Branding')
+                +portfolio-block(
+                'assets/img/smart.jpg',
+                'Smart Stacionary',
+                'Print Design')
+                .third-block
+                    +portfolio-block(
+                    'assets/img/clever.jpg',
+                    'Clever Poster',
+                    'Print Design')
+                .first-block
+                    +portfolio-block(
+                    'assets/img/vinyl.jpg',
+                    'Vinyl Record',
+                    'Product Mock-Up')
+                +portfolio-block(
+                'assets/img/treehouse.jpg',
+                'Treehouse Template',
+                'Web Design')
+                .third-block
+                    +portfolio-block(
+                    'assets/img/burned.jpg',
+                    'Burned Logo',
+                    'Branding')
+    #about-us
+        .container
+            +block-title(
+            'about us',
+            'Proin iaculis purus consequat sem cure.')
+            .about__block
+                +about-block(
+                'assets/img/humble.png',
+                'july 2010',
+                'Our Humble Beginnings',
+                'Proin iaculis purus consequat sem cure digni ssim.' +
+                'Donec porttitora entum suscipit aenean rhoncus ' +
+                'posuere odio in tincidunt. Proin iaculis purus ' +
+                'consequat sem cure digni ssim. Donec porttitora ' +
+                'entum suscipit.')
+                .vertical_line
+                +about-block2(
+                'january 2011',
+                'Facing Startup Battles',
+                'Proin iaculis purus consequat sem cure digni ssim.' +
+                'Donec porttitora entum suscipit aenean rhoncus ' +
+                'posuere odio in tincidunt. Proin iaculis purus ' +
+                'consequat sem cure digni ssim. Donec porttitora ' +
+                'entum suscipit.',
+                'assets/img/facing.png')
+                .vertical_line
+                +about-block(
+                'assets/img/enter.png',
+                'december 2012',
+                'Enter The Dark Days',
+                'Proin iaculis purus consequat sem cure digni ssim.' +
+                'Donec porttitora entum suscipit aenean rhoncus ' +
+                'posuere odio in tincidunt. Proin iaculis purus ' +
+                'consequat sem cure digni ssim. Donec porttitora ' +
+                'entum suscipit.')
+                .vertical_line
+                +about-block2(
+                'february 2014',
+                'Our Triumph',
+                'Proin iaculis purus consequat sem cure digni ssim.' +
+                'Donec porttitora entum suscipit aenean rhoncus ' +
+                'posuere odio in tincidunt. Proin iaculis purus ' +
+                'consequat sem cure digni ssim. Donec porttitora ' +
+                'entum suscipit.',
+                'assets/img/triumph.png')
+                .vertical_line
+                .story
+                    a(href="") our story continues ...
+    #team
+        .container
+            +block-title(
+            'our amazing team',
+            'Proin iaculis purus consequat sem cure.')
+            .team__block
+                +team-block(
+                'assets/img/coder.png',
+                'Kimberly Thompson',
+                'Marketer',
+                'fa fa-twitter',
+                'fa fa-facebook',
+                'fa fa-pinterest-p')
+                +team-block(
+                'assets/img/coder.png',
+                'Rico Massimo',
+                'Coder',
+                'fa fa-twitter',
+                'fa fa-facebook',
+                'fa fa-google-plus')
+                +team-block(
+                'assets/img/coder.png',
+                'Uku Mason',
+                'Graphic Designer',
+                'fa fa-facebook',
+                'fa fa-pinterest-p',
+                '')
+    #logos
+        .container
+            marquee(scrollamount="10rem")
+                img(src="assets/img/Envato.png")
+                img(src="assets/img/WordPress.png")
+                img(src="assets/img/Tuts.png")
+                img(src="assets/img/Microlancer.png")
+    #contact
+        img(src="assets/img/map.png")
+        .container
+            .contact__inform
+                +block-title(
+                'our amazing team',
+                'Proin iaculis purus consequat sem cure.')
+                form(id="application" action=" application.php" method="POST" name=" application")
+                    .form-input__name
+                        input(name="name" type="text" class="box" id="name" placeholder="your name *")
+                        input(name="email" type="text" class="box" id="email" placeholder="your e-mail *")
+                        input(name="subject" type="text" class="box" id="subject" placeholder="subject")
+                    .form-input__message
+                        input(name="message" type="text" class="box"  id="message" placeholder="your message *")
+                        button(name="send" type="submit" class="button" id="send") send
+
+
+
+
+
+
+
+
+
+
+
+

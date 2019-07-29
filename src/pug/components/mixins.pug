@@ -1,0 +1,48 @@
+mixin service-block(i,title,text)
+    .services__block-block
+        i(class=i)
+        p=title
+        p=text
+
+mixin block-title (title, text)
+    .title
+        p=title
+        p=text
+
+mixin portfolio-block (src,title,text)
+    .portfolio__block-block
+        img(src=src)
+        p=title
+        p=text
+
+mixin about-block (src,title,title1,text)
+    .about__block-block
+        .about__block-block.block-img
+            img(src=src)
+        .about__block-block.block-text
+            p=title
+            p=title1
+            p=text
+
+mixin about-block2 (title,title1,text,src)
+        .about__block-block
+            .about__block-block.block-img2
+                img(src=src)
+            .about__block-block.block-text2
+                p=title
+                p=title1
+                p=text
+
+mixin team-block (src,title,text,i,i2,i3)
+    .team__block-block
+        img(src=src)
+        p=title
+        p=text
+        a(href="" )
+            i(class=i)
+        a(href="" )
+            i(class=i2)
+        a(href="" )
+            i(class=i3)
+
+
